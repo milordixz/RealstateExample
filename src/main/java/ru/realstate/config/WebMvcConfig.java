@@ -53,6 +53,7 @@ class WebMvcConfig extends WebMvcConfigurationSupport {
         resolver.setSuffix(".html");
         resolver.setTemplateMode(TemplateMode.HTML);
         resolver.setCacheable(false);
+        resolver.setCharacterEncoding("UTF-8");
         return resolver;
     }
 
@@ -70,6 +71,7 @@ class WebMvcConfig extends WebMvcConfigurationSupport {
         ThymeleafViewResolver thymeleafViewResolver = new ThymeleafViewResolver();
         thymeleafViewResolver.setTemplateEngine(templateEngine());
         thymeleafViewResolver.setCharacterEncoding("UTF-8");
+        thymeleafViewResolver.setContentType("text/html; charset=UTF-8");
         return thymeleafViewResolver;
     }
 
