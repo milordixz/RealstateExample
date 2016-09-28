@@ -1,6 +1,7 @@
 package ru.realstate.account;
 
 import java.security.Principal;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -39,4 +40,13 @@ class AccountController {
     public Account account(@PathVariable("id") Long id) {
         return accountRepository.findOne(id);
     }
+
+    @RequestMapping(value = "account/all", method = RequestMethod.GET)
+    @ResponseStatus(value = HttpStatus.OK)
+    @ResponseBody
+    @Secured("ROLE_ADMIN")
+    public List<Account> getAllAccounts() {
+        return accountRepository.findAll();
+    }
+
 }

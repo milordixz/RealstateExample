@@ -31,6 +31,24 @@ public class AccountService implements UserDetailsService {
 	protected void initialize() {
 		save(new Account("user", "demo", "ROLE_USER"));
 		save(new Account("admin", "admin", "ROLE_ADMIN"));
+		save(new Account("user2333", "demo", "ROLE_USER"));
+		save(new Account("admin2333", "admin", "ROLE_ADMIN"));
+		save(new Account("user232323", "demo", "ROLE_USER"));
+		save(new Account("admin23333", "admin", "ROLE_ADMIN"));
+		save(new Account("user212ewe", "demo", "ROLE_USER"));
+		save(new Account("admin2345we", "admin", "ROLE_ADMIN"));
+		save(new Account("user234qq", "demo", "ROLE_USER"));
+		save(new Account("admin234qwe", "admin", "ROLE_ADMIN"));
+		save(new Account("userwwwwwwwqe", "demo", "ROLE_USER"));
+		save(new Account("admin23ww", "admin", "ROLE_ADMIN"));
+		save(new Account("user2333w", "demo", "ROLE_USER"));
+		save(new Account("admin2333www", "admin", "ROLE_ADMIN"));
+		save(new Account("user232323www", "demo", "ROLE_USER"));
+		save(new Account("admin23333ww", "admin", "ROLE_ADMIN"));
+		save(new Account("user212w", "demo", "ROLE_USER"));
+		save(new Account("admin2345ww", "admin", "ROLE_ADMIN"));
+		save(new Account("user234ww", "demo", "ROLE_USER"));
+		save(new Account("admin234www", "admin", "ROLE_ADMIN"));
 	}
 
 	@Transactional
