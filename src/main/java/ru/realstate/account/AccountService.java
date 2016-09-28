@@ -49,6 +49,9 @@ public class AccountService implements UserDetailsService {
 		save(new Account("admin2345ww", "admin", "ROLE_ADMIN"));
 		save(new Account("user234ww", "demo", "ROLE_USER"));
 		save(new Account("admin234www", "admin", "ROLE_ADMIN"));
+		save(new Account("admin11www", "admin", "ROLE_ADMIN"));
+		save(new Account("admin111www", "admin", "ROLE_ADMIN"));
+		save(new Account("Admin", "12", "ROLE_ADMIN"));
 	}
 
 	@Transactional
