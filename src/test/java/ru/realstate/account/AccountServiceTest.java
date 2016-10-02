@@ -11,6 +11,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import ru.realstate.service.JPA.AccountRepository;
 
 import static java.util.function.Predicate.isEqual;
 import static org.assertj.core.api.Assertions.assertThat;

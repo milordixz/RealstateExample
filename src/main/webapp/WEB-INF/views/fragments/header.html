@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link href="../../../resources/css/bootstrap.min.css" rel="stylesheet" media="screen" th:href="@{/resources/css/bootstrap.min.css}"/>
@@ -20,6 +20,7 @@
                 <li class="active"><a href="#" th:href="@{/}">Аренда</a></li>
                 <li><a href="#about">О нас</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li sec:authorize="hasRole('ROLE_ADMIN')"><a href="admin">Admin Panel</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li th:if="${#authorization.expression('!isAuthenticated()')}">

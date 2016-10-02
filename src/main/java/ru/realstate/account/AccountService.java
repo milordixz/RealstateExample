@@ -16,6 +16,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.stereotype.Service;
 import org.springframework.context.annotation.Scope;
 import org.springframework.context.annotation.ScopedProxyMode;
+import ru.realstate.service.JPA.AccountRepository;
 
 @Service
 @Scope(proxyMode = ScopedProxyMode.TARGET_CLASS)
@@ -52,6 +53,12 @@ public class AccountService implements UserDetailsService {
 		save(new Account("admin11www", "admin", "ROLE_ADMIN"));
 		save(new Account("admin111www", "admin", "ROLE_ADMIN"));
 		save(new Account("Admin", "12", "ROLE_ADMIN"));
+		save(new Account("user2341ww", "demo", "ROLE_USER"));
+		save(new Account("admin2341www1", "admin", "ROLE_ADMIN"));
+		save(new Account("admin111www1", "admin", "ROLE_ADMIN"));
+		save(new Account("admin1111www1", "admin", "ROLE_ADMIN"));
+		save(new Account("Admin212121211", "12", "ROLE_ADMIN"));
+
 	}
 
 	@Transactional
